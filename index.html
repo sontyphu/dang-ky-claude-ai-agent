@@ -107,6 +107,10 @@
   .faq-item p{margin:0;color:var(--muted);font-size:16px}
 
   .form-wrap{background:var(--cream-deep)}
+  .qua-form{display:grid;grid-template-columns:1fr 560px;gap:32px;align-items:start;margin-top:10px}
+  .qua-col .gift{max-width:none;margin:0}
+  .form-col .form-card{max-width:none;width:100%;margin:16px 0 0}
+  @media(max-width:920px){.qua-form{grid-template-columns:1fr}.qua-col .gift{margin:0 auto}.form-col .form-card{max-width:560px;margin:16px auto 0}}
   .form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:40px;max-width:560px;margin:24px auto 0}
   .form-card label{display:block;font-weight:600;font-size:15px;margin:16px 0 7px}
   .form-card input{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;background:#FCFAF6}
@@ -282,41 +286,42 @@
 
 <section class="form-wrap" id="dangky">
   <div class="wrap">
-    <h2 class="center">Bạn đã dùng AI đủ lâu rồi. Đã đến lúc để nó làm việc cho bạn</h2>
-    <p class="center" style="max-width:700px;margin:0 auto;color:var(--muted)">Hai giờ tối nay có thể là khoảnh khắc bạn nhìn lại sau này và nói: đó là lúc tôi bước từ người dùng AI sang người làm chủ AI.</p>
-    <div class="form-card">
-      <p class="scarce">Buổi học chỉ nhận tối đa 200 người để tôi còn theo sát phần thực hành. Giữ chỗ trước khi đầy.</p>
-      <form class="reg-form" onsubmit="return false;">
-        <label for="ten1">Họ và tên</label>
-        <input type="text" id="ten1" name="ten" placeholder="Nguyễn Văn A" required>
-        <label for="sdt1">Số điện thoại (Zalo)</label>
-        <input type="tel" id="sdt1" name="sdt" placeholder="09xx xxx xxx" required>
-        <label for="email1">Email</label>
-        <input type="email" id="email1" name="email" placeholder="email@cua-ban.com" required>
-        <label for="nganhNghe1">Ngành nghề / lĩnh vực của bạn</label>
-        <input type="text" id="nganhNghe1" name="nganhNghe" placeholder="Ví dụ: nha khoa, bất động sản, spa, bán lẻ..." required>
-        <button type="submit" class="btn">Giữ chỗ miễn phí ngay</button>
-      </form>
-      <p class="reassure">Thông tin của bạn được giữ kín, chỉ dùng để gửi link vào học và tài liệu buổi học.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2 class="center">Quà cho người dự đến phút cuối</h2>
-    <div class="gift">
-      <p>Cuối buổi, tôi tặng riêng cho những người ngồi đến phút cuối một món quà mà bạn cài vào máy và dùng được ngay:</p>
-      <h3 style="color:var(--terra-deep)">Bộ 5 AI Agent Khởi Động - 5 Agent cài là chạy</h3>
-      <p style="margin:10px 0 0;color:var(--muted)">Năm nhân viên AI tôi làm sẵn, bạn chỉ việc cài vào Claude và giao việc:</p>
-      <ul class="agent-list">
-        <li>Agent trả lời và chăm sóc khách hàng</li>
-        <li>Agent soạn báo cáo từ dữ liệu của bạn</li>
-        <li>Agent viết nội dung bán hàng</li>
-        <li>Agent tóm tắt tài liệu và cuộc họp</li>
-        <li>Agent nghiên cứu thị trường và đối thủ</li>
-      </ul>
-      <p style="margin:6px 0 0;color:var(--muted)">Đây chính là thứ bạn vừa học cách tự xây trong buổi, được tôi đóng gói sẵn để bạn chạy ngay từ tối nay. Đó là lý do bạn nên thu xếp ngồi trọn 2 giờ. Phần hay nhất luôn ở cuối.</p>
+    <div class="qua-form">
+      <div class="qua-col">
+        <h2 class="center">Quà cho người dự đến phút cuối</h2>
+        <div class="gift">
+          <p>Cuối buổi, tôi tặng riêng cho những người ngồi đến phút cuối một món quà mà bạn cài vào máy và dùng được ngay:</p>
+          <h3 style="color:var(--terra-deep)">Bộ 5 AI Agent Khởi Động - 5 Agent cài là chạy</h3>
+          <p style="margin:10px 0 0;color:var(--muted)">Năm nhân viên AI tôi làm sẵn, bạn chỉ việc cài vào Claude và giao việc:</p>
+          <ul class="agent-list">
+            <li>Agent trả lời và chăm sóc khách hàng</li>
+            <li>Agent soạn báo cáo từ dữ liệu của bạn</li>
+            <li>Agent viết nội dung bán hàng</li>
+            <li>Agent tóm tắt tài liệu và cuộc họp</li>
+            <li>Agent nghiên cứu thị trường và đối thủ</li>
+          </ul>
+          <p style="margin:6px 0 0;color:var(--muted)">Đây chính là thứ bạn vừa học cách tự xây trong buổi, được tôi đóng gói sẵn để bạn chạy ngay từ tối nay. Đó là lý do bạn nên thu xếp ngồi trọn 2 giờ. Phần hay nhất luôn ở cuối.</p>
+        </div>
+      </div>
+      <div class="form-col">
+        <h2 class="center">Bạn đã dùng AI đủ lâu rồi. Đã đến lúc để nó làm việc cho bạn</h2>
+        <p class="center" style="margin:0 0 16px;color:var(--muted)">Hai giờ tối nay có thể là khoảnh khắc bạn nhìn lại sau này và nói: đó là lúc tôi bước từ người dùng AI sang người làm chủ AI.</p>
+        <div class="form-card">
+          <p class="scarce">Buổi học chỉ nhận tối đa 200 người để tôi còn theo sát phần thực hành. Giữ chỗ trước khi đầy.</p>
+          <form class="reg-form" onsubmit="return false;">
+            <label for="ten1">Họ và tên</label>
+            <input type="text" id="ten1" name="ten" placeholder="Nguyễn Văn A" required>
+            <label for="sdt1">Số điện thoại (Zalo)</label>
+            <input type="tel" id="sdt1" name="sdt" placeholder="09xx xxx xxx" required>
+            <label for="email1">Email</label>
+            <input type="email" id="email1" name="email" placeholder="email@cua-ban.com" required>
+            <label for="nganhNghe1">Ngành nghề / lĩnh vực của bạn</label>
+            <input type="text" id="nganhNghe1" name="nganhNghe" placeholder="Ví dụ: nha khoa, bất động sản, spa, bán lẻ..." required>
+            <button type="submit" class="btn">Giữ chỗ miễn phí ngay</button>
+          </form>
+          <p class="reassure">Thông tin của bạn được giữ kín, chỉ dùng để gửi link vào học và tài liệu buổi học.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
