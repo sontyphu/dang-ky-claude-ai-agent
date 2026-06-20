@@ -109,7 +109,7 @@
   .form-wrap{background:var(--cream-deep)}
   .qua-form{display:grid;grid-template-columns:1fr 560px;gap:32px;align-items:start;margin-top:10px}
   .qua-col .gift{max-width:none;margin:0}
-  .form-col .form-card{max-width:none;width:100%;margin:16px 0 0}
+  .form-col .form-card{max-width:none;width:100%;margin:0}
   @media(max-width:920px){.qua-form{grid-template-columns:1fr}.qua-col .gift{margin:0 auto}.form-col .form-card{max-width:560px;margin:16px auto 0}}
   .form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:40px;max-width:560px;margin:24px auto 0}
   .form-card label{display:block;font-weight:600;font-size:15px;margin:16px 0 7px}
@@ -286,10 +286,12 @@
 
 <section class="form-wrap" id="dangky">
   <div class="wrap">
+    <h2 class="center">Bạn đã dùng AI đủ lâu rồi. Đã đến lúc để nó làm việc cho bạn</h2>
+    <p class="center" style="max-width:720px;margin:0 auto 28px;color:var(--muted)">Hai giờ tối nay có thể là khoảnh khắc bạn nhìn lại sau này và nói: đó là lúc tôi bước từ người dùng AI sang người làm chủ AI.</p>
     <div class="qua-form">
       <div class="qua-col">
-        <h2 class="center">Quà cho người dự đến phút cuối</h2>
         <div class="gift">
+          <h3 style="margin-bottom:10px">Quà cho người dự đến phút cuối</h3>
           <p>Cuối buổi, tôi tặng riêng cho những người ngồi đến phút cuối một món quà mà bạn cài vào máy và dùng được ngay:</p>
           <h3 style="color:var(--terra-deep)">Bộ 5 AI Agent Khởi Động - 5 Agent cài là chạy</h3>
           <p style="margin:10px 0 0;color:var(--muted)">Năm nhân viên AI tôi làm sẵn, bạn chỉ việc cài vào Claude và giao việc:</p>
@@ -304,8 +306,6 @@
         </div>
       </div>
       <div class="form-col">
-        <h2 class="center">Bạn đã dùng AI đủ lâu rồi. Đã đến lúc để nó làm việc cho bạn</h2>
-        <p class="center" style="margin:0 0 16px;color:var(--muted)">Hai giờ tối nay có thể là khoảnh khắc bạn nhìn lại sau này và nói: đó là lúc tôi bước từ người dùng AI sang người làm chủ AI.</p>
         <div class="form-card">
           <p class="scarce">Buổi học chỉ nhận tối đa 200 người để tôi còn theo sát phần thực hành. Giữ chỗ trước khi đầy.</p>
           <form class="reg-form" onsubmit="return false;">
